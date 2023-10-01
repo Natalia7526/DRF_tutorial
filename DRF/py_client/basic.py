@@ -1,11 +1,14 @@
 import requests
 
 # endpoint = "https://httpbin.org/anything"
-endpoint = "https://httpbin.org/sttus/200/"
+# endpoint = "https://httpbin.org/status/200/"
+endpoint = "http://localhost:8000/"  # default django url http://127.0.0.1:8000/
 
 # get_response = requests.get(endpoint)  # HTTP Request
 get_response = requests.get(endpoint, json={"query": "Hello world"})  # HTTP Request with added dictionary
 print(get_response.text)  # print raw text response
+print(get_response.status_code)
+
 
 # API [Application Programming Interface] -> Method
 # Phone -> Camera -> App -> API -> CAMERA
@@ -13,7 +16,7 @@ print(get_response.text)  # print raw text response
 # REST API request (http) -> JSON (xml)
 # JavaScript Object Notation ~ Python Dictionary (only almost like python dictionary but is something different)
 
-print(get_response.json())
+# print(get_response.json())
 
 # example for get_response = requests.get(endpoint)
 # {'args': {}, 'data': '', 'files': {}, 'form': {}, 'headers': {'Accept': '*/*', '
