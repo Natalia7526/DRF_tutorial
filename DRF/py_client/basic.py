@@ -8,7 +8,8 @@ endpoint = "http://localhost:8000/api/"  # default django url http://127.0.0.1:8
 # get_response = requests.get(endpoint, json={"query": "Hello world"})  # HTTP Request with added dictionary
 get_response = requests.get(endpoint, params={"abc": 123},
                             json={"query": "Hello world"})  # HTTP Request with added dictionary and params
-print(get_response.text)  # print raw text response
+# print(get_response.headers)
+# print(get_response.text)  # print raw text response
 # print(get_response.status_code)
 
 # API [Application Programming Interface] -> Method
@@ -17,7 +18,7 @@ print(get_response.text)  # print raw text response
 # REST API request (http) -> JSON (xml)
 # JavaScript Object Notation ~ Python Dictionary (only almost like python dictionary but is something different)
 
-# print(get_response.json())
+print(get_response.json())
 # print(get_response.json()['message'])
 
 # example for get_response = requests.get(endpoint)
