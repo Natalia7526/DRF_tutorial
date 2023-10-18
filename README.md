@@ -16,11 +16,11 @@ Before you begin, ensure you have met the following requirements:
 
 ### Installation
 
-1. Clone the repository: git clone https://github.com/Natalia7526/DRF_tutorial
-2. Change into the project directory: cd DRF_tutorial
-3. Create a virtual environment: python -m venv venv
+1. Clone the repository: **git clone https://github.com/Natalia7526/DRF_tutorial**
+2. Change into the project directory: **cd DRF_tutorial**
+3. Create a virtual environment: **python -m venv venv**
 4. Activate the virtual environment:
-   on Windows use venv\Scripts\activate
-5. Install project dependencies: pip install -r requirements.txt
-6. Apply database migrations: python manage.py migrate
-7. Run the development server: python manage.py runserver [http://localhost:8000]
+   on Windows use **venv\Scripts\activate**
+5. Install project dependencies: **pip install -r requirements.txt**
+6. Apply database migrations: **python manage.py migrate**
+7. Run the development server: **python manage.py runserver** [http://localhost:8000]
